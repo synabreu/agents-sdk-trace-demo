@@ -15,14 +15,14 @@ python -m venv .venv
 
 `python` 대신 `py`만 동작하면 첫 명령의 `python`을 `py`로 바꾸세요. 가상환경 활성화 없이 실행할 수 있어 PowerShell 실행 정책 변경이 필요 없습니다.
 
-## 2. 기존 키 설정
+## 2. OpenAI API Key 설정
 
 ```powershell
 Copy-Item .env.example .env
 notepad .env
 ```
 
-이미 .env가 있다면 복사하지 말고 편집하세요. `your_api_key_here`를 기존 API 키로 바꾸고 저장합니다. 키를 채팅이나 GitHub에 올리지 마세요.
+여러분의 OpenAI API 키를 `your_api_key_here`에 넣어주세요. 
 
 ```dotenv
 OPENAI_API_KEY=your_api_key_here
